@@ -1,0 +1,76 @@
+h1 {
+  color: #f1c8cb;
+  font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+  font-size: 48px; /* Made it bigger */
+  margin-top: 40px; /* Pushed it lower */
+}
+
+body {
+  font-family: 'Sour Gummy', sans-serif;
+  background: url('../img/heart.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #F1C8CB; 
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Ensures full height */
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 40px; /* Increased gap to 40px */
+  flex-grow: 1; 
+}
+
+.image-container, .video-container {
+  width: 320px;
+  background-color: #CCD5C3;
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.image-container:hover, .video-container:hover {
+  background-color: #f1c8cb;
+  transform: scale(1.05); 
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.image-container img, .video-container video {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s ease; 
+}
+
+.image-container:hover img, .video-container:hover video {
+  transform: scale(1.05);
+}
+
+.image-container p, .video-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #7e8c69; 
+}
+
+.left-side {
+  flex-grow: 1; 
+  margin-right: 20px; 
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px; 
+}

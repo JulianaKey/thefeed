@@ -1,0 +1,65 @@
+.container {
+  text-align: center; /* Centers inline elements like <img> */
+}
+
+.enter-btn img {
+  width: 150px; /* Adjust size if needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  transition: transform 0.3s ease-in-out;
+}
+
+.enter-btn img:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+h1 {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f1c8cb;
+  font-size: 90px;
+  text-align: center;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+body {
+  background-color: #9CAD8C;
+}
+
+p {
+  color: #f1c8cb;
+  text-align: center;
+  font-family: "Cherry Bomb One", serif;
+  font-size: 30px;
+}
+
+.enter-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #b7d8a3;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Cherry Bomb One", serif;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.enter-btn:hover {
+  background-color: #a1c893;
+}
+
