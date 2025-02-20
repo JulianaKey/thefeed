@@ -1,65 +1,81 @@
-.container {
-  text-align: center; /* Centers inline elements like <img> */
+/* Full-page Background */
+body {
+  background-image: linear-gradient( #F6B0BB, #b7c4ab);
+  background-size:70%;
+  font-family: "Cherry Bomb One", serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 }
 
+/* Main Container */
+.container {
+  background: url('../img/box.jpg'); /* Ensure the correct path */
+  background-size: 150px 150px; /* Adjust pattern size */
+  background-repeat: repeat; /* Repeat the pattern */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Heading */
+h1 {
+  font-size: 90px;
+  color: #7E8C69;
+  font-weight: 400;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Bouncy Animation */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+/* Welcome Text */
+p {
+  font-size: 30px;
+  color: #7E8C69;
+}
+
+/* Enter Button */
+.enter-btn {
+  display: inline-block;
+  width: 200px;
+  padding: 15px;
+  background-color: #F1C8CB;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect - Changes to Pink */
+.enter-btn:hover {
+  background-color: #f1c8cb; /* Same pink as text */
+  color: #fff; /* Keep text white for contrast */
+}
+
+/* Matcha GIF */
 .enter-btn img {
-  width: 150px; /* Adjust size if needed */
+  width: 150px;
   height: auto;
   display: block;
-  margin: 0 auto; /* Centers the image */
+  margin: 0 auto;
   transition: transform 0.3s ease-in-out;
 }
 
 .enter-btn img:hover {
-  transform: scale(1.1); /* Slight zoom effect */
+  transform: scale(1.1);
 }
-
-h1 {
-  font-family: "Cherry Bomb One", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #f1c8cb;
-  font-size: 90px;
-  text-align: center;
-  animation: bounce 2s ease-in-out infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-body {
-  background-color: #9CAD8C;
-}
-
-p {
-  color: #f1c8cb;
-  text-align: center;
-  font-family: "Cherry Bomb One", serif;
-  font-size: 30px;
-}
-
-.enter-btn {
-  display: block;
-  width: 200px;
-  margin: 20px auto;
-  padding: 15px;
-  background-color: #b7d8a3;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  font-family: "Cherry Bomb One", serif;
-  font-size: 20px;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.enter-btn:hover {
-  background-color: #a1c893;
-}
-

@@ -3,73 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Feed</title>
+    <title>Juliana's Feed</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/thefeed.css">
 </head>
 <body>
+
     <a href="index.html" class="back-btn">← Back</a>
-    
-    <h1>THE FEED</h1>
 
-    <div class="gallery">
-        <div class="image-container">
-            <img src="img/spotify.png" alt="personal spotify playlist">
-            <p>Every day feels better with a good playlist to match the mood and energy.🎧</p>
-        </div>
-        <div class="image-container">
-            <img src="img/periodtracker.png" alt="period tracker app">
-            <p>I have checked my app for the 15th time today, but honestly, it's like looking at the weather forecast—sometimes it’s accurate, sometimes it’s not. But I’m still trying to keep it under control like it’s my 9-to-5 job. 🌧️🌞</p>
-        </div>
-
-        <div class="image-container">
-            <img src="img/book.png" alt="cover of a book called the courage to be disliked">
-            <p>This book has been my go-to lately. I read a bit whenever I can.📚</p>
-        </div>
-        <div class="video-container"> 
-            <video width="270" height="540" controls>
-            <source src="img/email.mp4" type="video/mp4">
-          </video>
-          <p>Is it possible to check my inbox too much? Asking for a friend… who's checked their email 5 times in the last hour.📬</p>
-        </div>
-        <div class="image-container">
-            <img src="img/ig.png" alt="screenshot of my instagram feed">
-            <p>Every post is a carefully chosen piece of a bigger picture. My feed isn’t just random snapshots—it’s a mood, a timeline, a reflection of me. Every scroll through it feels like flipping through a digital scrapbook of memories, aesthetics, and phases I’ve gone through.💘</p>
-        </div>
-        <div class="image-container">
-            <img src="img/orchidtattoo.png" alt="pinterest folder of different types of orchids">
-            <p>I've always been drawn to orchids—their elegance, their resilience, the way they thrive even in the harshest conditions. They symbolize beauty, strength, and transformation, all things I want to carry with me forever. My dream? To turn this obsession into ink, a tattoo that represents growth, grace, and the quiet power of perseverance. One day soon, my love for orchids won’t just live in my Pinterest folder—it’ll be a part of me.🌸</p>
-        </div>
-        <div class="video-container"> 
-        <video width="270" height="540" controls>
-            <source src="img/homescreen.mp4" type="video/mp4">
-          </video>
-          <p>No apps, no mess—just four folders and my favorite person.🫶</p>
-        </div>
-        <div class="image-container">
-            <img src="img/amazon.png" alt="amazon cart with overpriced skincare items">
-            <p>Girl math: $19 for a mask is basically free when you consider how much happier and refreshed I’ll feel after. Worth it for that zen glow! ✨ #GirlMath</p>
-        </div>
-        <div class="image-container">
-            <img src="img/screentime.png" alt="screenshot of my screentime">
-            <p>Almost 11 hours a week on my phone... definitely time to rethink my digital habits.🙈</p>
-        </div>
-        <div class="video-container"> 
-        <video width="270" height="540" controls>
-            <source src="img/uberscreenrecording.mp4" type="video/mp4">
-          </video>
-          <p>Here’s a screen recording of my Uber rides over the past month. At this point, Uber should be sponsoring me with how much I use it. My bank account: We need to talk. 🚗💸</p>
-        </div>
-        <div class="image-container">
-            <img src="img/alarms.png" alt="multiple alarms in a row">
-            <p>The snooze button isn’t for procrastination; it’s my wake-up ritual. Five more minutes is never enough, but it's definitely the time I need to emotionally prepare for the day.⏰</p>
-        </div>
-            <div class="image-container">
-                <img src="img/doordash.png" alt="doordash order of strawberry matcha latte, sparkling water and berry cheesecake">
-                <p>Strawberry matcha lattes are my love language—don’t ask, just join me in this daily ritual. 🍓🍵</p>
+    <div class="feed-layout">
+        <!-- Main Content (Left Side) -->
+        <div class="left-section">
+            <img src="img/matcha.gif" alt="Matcha GIF" class="matcha-gif">
+            <div class="welcome-box">
+                <p class="bubbly-text">Welcome to My Feed! 🌸☁️✨  
+                A cozy space filled with love, matcha, and all things cute! 💖🍵</p>
             </div>
-             
+        </div>
+
+        <!-- Right Side Content -->
+        <div class="right-section">
+            <!-- Feed Title -->
+            <h1 class="feed-title">Juliana’s Feed</h1>
+
+            <!-- Gallery Section -->
+            <div class="gallery">
+                <div class="image-container">
+                    <img src="img/spotify.png" alt="personal spotify playlist">
+                    <p>Every day feels better with a good playlist to match the mood and energy.🎧</p>
+                </div>
+                <div class="image-container">
+                    <img src="img/periodtracker.png" alt="period tracker app">
+                    <p>I have checked my app for the 15th time today, but honestly, it's like looking at the weather forecast—sometimes it’s accurate, sometimes it’s not. But I’m still trying to keep it under control like it’s my 9-to-5 job. 🌧️🌞</p>
+                </div>
+
+                <div class="image-container">
+                    <img src="img/book.png" alt="cover of a book called the courage to be disliked">
+                    <p>This book has been my go-to lately. I read a bit whenever I can.📚</p>
+                </div>
+                <div class="video-container"> 
+                    <video width="270" height="540" controls>
+                        <source src="img/email.mp4" type="video/mp4">
+                    </video>
+                    <p>Is it possible to check my inbox too much? Asking for a friend… who's checked their email 5 times in the last hour.📬</p>
+                </div>
+                <div class="image-container">
+                    <img src="img/ig.png" alt="screenshot of my instagram feed">
+                    <p>Every post is a carefully chosen piece of a bigger picture. My feed isn’t just random snapshots—it’s a mood, a timeline, a reflection of me.💘</p>
+                </div>
+                <div class="image-container">
+                    <img src="img/orchidtattoo.png" alt="pinterest folder of different types of orchids">
+                    <p>I've always been drawn to orchids—their elegance, their resilience, the way they thrive even in the harshest conditions. They symbolize beauty, strength, and transformation, all things I want to carry with me forever.🌸</p>
+                </div>
+                <div class="video-container"> 
+                    <video width="270" height="540" controls>
+                        <source src="img/homescreen.mp4" type="video/mp4">
+                    </video>
+                    <p>No apps, no mess—just four folders and my favorite person.🫶</p>
+                </div>
+                <div class="image-container">
+                    <img src="img/amazon.png" alt="amazon cart with overpriced skincare items">
+                    <p>Girl math: $19 for a mask is basically free when you consider how much happier and refreshed I’ll feel after.✨ #GirlMath</p>
+                </div>
+                <div class="image-container">
+                    <img src="img/screentime.png" alt="screenshot of my screentime">
+                    <p>Almost 11 hours a week on my phone... definitely time to rethink my digital habits.🙈</p>
+                </div>
+                <div class="video-container"> 
+                    <video width="270" height="540" controls>
+                        <source src="img/uberscreenrecording.mp4" type="video/mp4">
+                    </video>
+                    <p>Here’s a screen recording of my Uber rides over the past month. At this point, Uber should be sponsoring me with how much I use it.🚗💸</p>
+                </div>
+                <div class="image-container">
+                    <img src="img/alarms.png" alt="multiple alarms in a row">
+                    <p>The snooze button isn’t for procrastination; it’s my wake-up ritual.⏰</p>
+                </div>
+                <div class="image-container">
+                    <img src="img/doordash.png" alt="doordash order of strawberry matcha latte, sparkling water and berry cheesecake">
+                    <p>Strawberry matcha lattes are my love language—don’t ask, just join me in this daily ritual. 🍓🍵</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
